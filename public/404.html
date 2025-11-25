@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到 - 404</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .error-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .error-message {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .back-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .snowflake {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 装饰雪花 -->
+    <div class="snowflake" style="left: 10%; animation-duration: 3s; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 20%; animation-duration: 4s; animation-delay: 1s;">❅</div>
+    <div class="snowflake" style="left: 30%; animation-duration: 5s; animation-delay: 2s;">❄</div>
+    <div class="snowflake" style="left: 40%; animation-duration: 3.5s; animation-delay: 0.5s;">❅</div>
+    <div class="snowflake" style="left: 50%; animation-duration: 4.5s; animation-delay: 1.5s;">❄</div>
+    <div class="snowflake" style="left: 60%; animation-duration: 3s; animation-delay: 2.5s;">❅</div>
+    <div class="snowflake" style="left: 70%; animation-duration: 5s; animation-delay: 0.8s;">❄</div>
+    <div class="snowflake" style="left: 80%; animation-duration: 4s; animation-delay: 1.8s;">❅</div>
+    <div class="snowflake" style="left: 90%; animation-duration: 3.5s; animation-delay: 2.8s;">❄</div>
+    
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">抱歉，您访问的页面不存在</p>
+        <p style="font-size: 16px; opacity: 0.8;">可能是链接输入错误，或者页面已被移除</p>
+        <a href="/" class="back-button">🏠 返回首页</a>
+    </div>
+</body>
+</html>
