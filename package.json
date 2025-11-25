@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "build": "node build.js",
+    "preview": "npx serve dist",
+    "deploy": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.81.1",
@@ -12,5 +15,9 @@
     "express": "^4.19.2",
     "helmet": "^7.1.0",
     "mysql2": "^3.10.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "serve": "^14.2.1"
   }
 }
